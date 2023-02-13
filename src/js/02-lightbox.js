@@ -11,14 +11,6 @@ galleryBox.insertAdjacentHTML("beforeend", cardsMarkup);
 
 galleryBox.addEventListener("click", (event) => {
   event.preventDefault();
-
-  let gallery = new SimpleLightbox(".gallery a", {
-    captionsData: "alt",
-    captionDelay: 250,
-  });
-  gallery.on("show.simplelightbox", function () {
-    console.log(gallery);
-  });
 });
 
 function createCardsMarkup(galleryItems) {
@@ -30,6 +22,6 @@ function createCardsMarkup(galleryItems) {
        alt = "${description}"></a>`
     )
     .join("");
-}
 
-console.log(SimpleLightbox);
+    console.log('.gallery');
+}
