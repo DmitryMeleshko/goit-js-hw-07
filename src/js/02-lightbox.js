@@ -23,5 +23,13 @@ function createCardsMarkup(galleryItems) {
     )
     .join("");
 
-    console.log('.gallery');
+    console.log(".gallery");
 }
+
+let gallery = new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
+  captionDelay: 250,
+});
+gallery.on("show.simplelightbox", function () {
+
+});
