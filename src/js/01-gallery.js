@@ -10,8 +10,9 @@ galleryContainer.addEventListener('click', (event) => {;
 
 function imgClick (event){
     event.preventDefault();
-    if(!event.target.nodeName !== "IMG") 
+    if(!event.target.nodeName !== "IMG"){ 
     return;
+    }
  }
  console.log("target", event.target);
  console.log("currentTarget", event.currentTarget);
