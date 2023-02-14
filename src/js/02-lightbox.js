@@ -1,4 +1,4 @@
-import { galleryItems } from './gallery-items.js';
+
 // Change code below this line
 
 console.log(galleryItems);
@@ -29,7 +29,4 @@ function createCardsMarkup(galleryItems) {
 let gallery = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionDelay: 250,
-});
-gallery.on("show.simplelightbox", function () {
-
 });
