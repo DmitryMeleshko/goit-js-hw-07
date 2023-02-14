@@ -8,9 +8,6 @@ const cardsMarkup = createCardsMarkup(galleryItems);
 
 galleryBox.insertAdjacentHTML("beforeend", cardsMarkup);
 
-galleryBox.addEventListener("click", (event) => {
-  event.preventDefault();
-});
 
 function createCardsMarkup(galleryItems) {
   return galleryItems
